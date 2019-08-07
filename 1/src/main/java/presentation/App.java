@@ -2,6 +2,7 @@ package presentation;
 
 import java.util.Scanner;
 
+import domain.Client;
 import domain.CompteBancaire;
 
 /**
@@ -45,6 +46,19 @@ public class App
     	}
     	System.out.println("Etat des comptes apres le virement");
     	System.out.println(cpte1.afficherResultOp(cpte1));
-    	System.out.println(cpte1.afficherResultOp(cpte2));
+    	
+    	System.out.println(cpte2.afficherResultOp(cpte2));
+    	
+    	//manipulations de clients
+    	Client cl1 = new Client(0, "Ochon","Paul");
+    	Client cl2 = new Client(1, "Kiroul","Pierre");
+    	Client cl3 = new Client(2, "Pamous","Anas");
+    	
+    	//creation de comptes reliés aux clients
+    	
+    	CompteBancaire  cpt0 = new CompteBancaire(cl1, 3400.00, "€");
+    	CompteBancaire  cpt1 = new CompteBancaire(cl2, 6587.05, "€");
+    	CompteBancaire  cpt2 = new CompteBancaire(cl3, 6780.090, "€");
+    	
     }
 }

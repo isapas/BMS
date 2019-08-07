@@ -10,7 +10,7 @@ package domain;
  */
 public class CompteBancaire {
 
-	private String titulaire;
+	private Client titulaire;
 	private Double solde;
 	private String devise;
 
@@ -21,19 +21,36 @@ public class CompteBancaire {
 	 * @param solde
 	 * @param devise
 	 */
-	public CompteBancaire(String titulaire, Double solde, String devise) {
+	public CompteBancaire(Client titulaire, Double solde, String devise) {
 		super();
 		this.titulaire = titulaire;
 		this.solde = solde;
 		this.devise = devise;
 	}
 
+	
+	public CompteBancaire(Client titulaire, Double solde) {
+		super();
+		this.titulaire = titulaire;
+		this.solde = solde;
+	}
+
+	
+	//constructor par défaut
+	public CompteBancaire() {
+			
+	}
+
+	public CompteBancaire(String string, double solde2, String devise2) {
+	}
+
+
 	// setters and getters//
-	public String getTitulaire() {
+	public Client getTitulaire() {
 		return titulaire;
 	}
 
-	public void setTitulaire(String titulaire) {
+	public void setTitulaire(Client titulaire) {
 		this.titulaire = titulaire;
 	}
 
@@ -70,7 +87,7 @@ public class CompteBancaire {
 
 	}
 	
-	public static String afficherResultOp(CompteBancaire cpteToDisplay) {
+	public String afficherResultOp(CompteBancaire cpteToDisplay) {
 		 String result = "le solde du compte " + cpteToDisplay + " est de  " + cpteToDisplay.solde + " " + cpteToDisplay.devise;
 		return result;
 		
