@@ -69,5 +69,11 @@ public class CompteBancaire {
 		solde = solde - montant;
 
 	}
+	
+	public static String afficherResultOp(CompteBancaire cpteToDisplay) {
+		 String result = "le solde du compte " + cpteToDisplay + " est de  " + cpteToDisplay.solde + " " + cpteToDisplay.devise;
+		return result;
+		
+	}
 
 }
