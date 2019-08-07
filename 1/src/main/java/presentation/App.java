@@ -1,4 +1,4 @@
-package bankManagementSystem;
+package presentation;
 
 /**
  * Hello world!

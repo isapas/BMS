@@ -1,4 +1,4 @@
-package bmsEntrainement;
+package presentation;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
