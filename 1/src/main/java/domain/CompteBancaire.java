@@ -10,9 +10,9 @@ package domain;
  */
 public class CompteBancaire {
 
-	private Client titulaire;
-	private Double solde;
-	private String devise;
+	protected Client titulaire;
+	protected Double solde;
+	protected String devise;
 
 	/**
 	 * constructor
@@ -36,13 +36,20 @@ public class CompteBancaire {
 	}
 
 	
-	//constructor par défaut
+	// default constructor
 	public CompteBancaire() {
 			
 	}
 
-	public CompteBancaire(String string, double solde2, String devise2) {
-	}
+//	/**
+//	 * Constructor for firt test CompteBancaire
+//	 * @param owner
+//	 * @param solde2
+//	 * @param devise2
+//	 */
+//	public CompteBancaire(String owner, double solde2, String devise2) {
+//		
+//	}
 
 
 	// setters and getters//
@@ -72,7 +79,7 @@ public class CompteBancaire {
 
 	@Override
 	public String toString() {
-		return "CompteBancaire [titulaire=" + titulaire + ", solde=" + solde + ", devise=" + devise + "]";
+		return "CompteBancaire: titulaire= " + titulaire + ", solde= " + solde + " " + devise + "]";
 	}
 
 	// class methods

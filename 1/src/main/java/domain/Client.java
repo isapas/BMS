@@ -18,7 +18,7 @@ public class Client {
 
 	@Override
 	public String toString() {
-		return "Client [comptes=" + comptes + "]";
+		return " client " + numero  + " , nom: " + nom + " , prenom: " + prenom ;
 	}
 
 	/**
@@ -89,6 +89,9 @@ public class Client {
 	 */
 	public void setPrenom(String prenom) {
 		this.prenom = prenom;
+	}
+	public void afficherComptes() {
+		
 	}
 
 }
